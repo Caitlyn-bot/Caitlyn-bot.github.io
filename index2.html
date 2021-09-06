@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="node_modules/element-ui/lib/theme-chalk/index.css">
+    <script src="node_modules/element-ui/lib/index.js"></script>
+</head>
+<body>
+<el-switch
+        v-model="value"
+        active-color="#13ce66"
+        inactive-color="#ff4949">
+</el-switch>
+
+<script>
+    export default {
+        data() {
+            return {
+                value: true
+            }
+        }
+    };
+</script>
+<div id="app">
+    <h2>{{name}}</h2>
+</div>
+
+<script type="text/javascript">
+    var app = new Vue({
+        el: "#app",//要渲染id为app的元素
+        data: {
+            name: "Vue初始化"
+        }
+    });
+
+</script>
+</body>
+</html>
